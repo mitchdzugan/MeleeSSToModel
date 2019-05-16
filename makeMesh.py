@@ -129,6 +129,8 @@ def getPicPos(img, dims, normView, axis, pos):
     offsetX = dot(fromCam, axis[0])
     offsetY = dot(fromCam, axis[1])
 
+    # units per pixel. The amount of melee units that represent 1 image
+    # pixel at this distance. Constant found experimentally.
     upp = 0.00102454 * dist
     ppu = 1/(upp)
 
